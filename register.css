@@ -1,0 +1,52 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  h1 {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+  }
+  
+  form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 3px solid pink;
+    border-radius: 15px;
+    margin: 30px auto;
+    padding-top: 50px;
+    position: relative;
+  }
+  
+  form > label {
+    height: 50px;
+    font-size: 22px;
+  }
+  
+  form > label > input {
+    padding-left: 20px;
+    font-size: 22px;
+  }
+  
+  form > button {
+    font-size: 22px;
+  }
+  
+  form > span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    color: red;
+    /* display: none; */
+  }
+  
+  form > span.active {
+    display: block;
+  }

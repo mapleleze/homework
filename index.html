@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>index</title>
+  <!-- 引入swiper样式文件 -->
+  <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./lib/css/index.css">
+</head>
+
+<body>
+
+  <h1>
+    首页
+    <p class="off "><a href="./login.html">您好, 请登录</a></p>
+    <p class="on active">您好, <span class="nickname">leon</span>
+      <button class="self">个人中心</button>
+      <button class="logout">退出登录</button>
+    </p>
+      
+  </h1>
+  <!-- 购买商品 -->
+  <div style="font-size: 100px; font-weight: 700;text-align: center;margin:8px;"><a href="./products.html">购买商品</a></div>
+  <script src="./axios.min.js"></script>
+  <script src="./http.js"></script>
+ 
+
+  <div class="relay">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/img1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/img2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/img3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/img4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./img/img5.jpg" alt=""></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- 引入swiper的js部分 -->
+  <script src="./lib/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+        delay: 2000,//2秒切换一次
+        pauseOnMouseEnter: true,
+      },//鼠标经过停止自动播放
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+    <script src="./lib/js/index.js"></script>
+</body>
+
+</html>

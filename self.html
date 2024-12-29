@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>self</title>
+  <link rel="stylesheet" href="./lib/css/self.css">
+</head>
+
+<body>
+  <h1>个人中心
+    <p class="p1"><a href="./pwd.html">修改密码</a></p>
+    <p class="p2"><a href="./index.html">回到首页</a></p>
+  </h1>
+  <form>
+    <label>
+      用户名：<input class="username" type="text" disabled style="margin-left: 0px">
+    </label>
+    <label>
+      年龄：<input class="age" type="text">
+    </label>
+    <label>
+      性别：<select name="gender">
+        <option value="choose">请选择</option>
+        <option value="男">男</option>
+        <option value="女">女</option>
+      </select>
+    </label>
+    <label>
+      昵称：<input class="nickname" type="text">
+    </label>
+    <button>确认修改</button>
+  </form>
+  <script src="./axios.min.js"></script>
+  <script src="./http.js"></script>
+  <script src="./lib/js/self.js"></script>
+</body>
+
+
+
+
+</html> 
